@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:black;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; 
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #06013f;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 8px 100px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img{
+    width: 100px;
+    object-fit: cover;
+}
+
+header .menu{
+    display: flex;
+    gap: 20px;
+}
+
+header .menu a{
+    font-family: 'Consolas';
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1 rem;
+    transition: transform 0.2s ease;
+}
+
+header .menu a:hover{
+    color: #1e90ff;
+    transform: scale(1.2);
+}
+
+#intro {
+    height: 100vh;
+    background-image: url('images/landpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#intro h1{
+    font-family: 'Tahoma';
+    font-size: 3rem;
+}
+
+#intro p{
+    font-family: 'Consolas';
+    font-size: 1.5rem;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    font-size: 30px;
+    color: #fff; 
+    margin: 10px;
+    transition: transform 0.2s ease; 
+}
+
+.redes-sociais a:hover{
+    color: #1e90ff;
+    transform: scale(1.2);
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.lang-button {
+    background-color: white; 
+    color: black;
+    font-family: 'Consolas';
+    border: none;
+    padding: 10px 20px; 
+    margin: 10px; 
+    font-size: 0.8rem; 
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.lang-button:hover {
+    background-color: #1e90ff; 
+    transform: scale(1.1);
+}
+
+#sobre{
+    height: 100vh;
+    background-image: url('images/landpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.conteudo-sobre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #06013f;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;  
+}
+
+.texto-sobre{
+    width: 50%;
+    padding-left: 40px;
+}
+
+.texto-sobre h2{
+    font-family: 'Courier New';
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.texto-sobre p{
+    font-size: 1.2rem;
+    color: rgb(163, 163, 163);
+    line-height: 1.6;
+}
+
+.imagem-sobre{
+    width: 40%;
+}
+
+.foto-perfil{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#projetos{
+    height: 100vh;
+    background-image: url('images/landpage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+#projetos h2 {
+    font-size: 2.5rem;
+    font-family: 'Courier New';
+    color: white;
+    margin-top: 40px;   
+}
+
+#projetos p {
+    font-size: 1.4rem;
+    color: white; 
+}
+
+.conteudo-projetos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: #06013f;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.projeto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: visible;
+}
+
+.projeto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projeto img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.projeto h3 {
+    font-size: 1.5rem;
+    color: #06013f;
+}
+
+.tecnologias {
+    margin-top: 40px;
+}
+
+.tecnologias h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.conteudo-tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.conteudo-tecnologias i {
+    font-size: 50px;
+    color: #fff; 
+    margin-top: 10px;
+    margin-inline: 10px;
+}
+
+#contato {
+    height: 30vh;
+    display: flex;
+    background-color: #06013f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    text-align: top;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+#contato h2 {
+    font-size: 2.2rem;
+    font-family: 'Courier New';
+    color: white;
+}
+
+#contato p {
+    font-size: 1rem;
+    color: white; 
+}
+
+footer {
+    background-color: #06013f;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #555;
+}
+
+header nav a{
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 10px;
+    }
+
+    header .menu a{
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    #intro{
+        height: 100vh;
+    }
+
+    .conteudo-sobre{
+        flex-direction: flex;
+        text-align: center;
+    }
+
+    .texto-sobre{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .imagem-sobre{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .foto-perfil{
+        width: 150px;
+        height: 150px;
+    }
+
+    .conteudo-projetos, .conteudo-tecnologias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto {
+        width: 90%;
+    }
+
+    .conteudo-tecnologias img {
+        width: 60px;
+        height: 60px;
+    }
+}

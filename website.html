@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGuilherme</title>
+    <link rel="icon" type="image/png" href="images/500x500.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">    
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-cabecalho">
+        </div>
+        <nav class="menu">
+            <a href="#intro" id="inc">Inicio</a>
+            <a href="#sobre" id="sbr">Sobre Mim</a>
+            <a href="#projetos" id="pjt">Projetos</a>
+            <a href="#contato" id="ctt">Contato</a>
+        </nav>
+    </header>
+    <!-- INTRO -->
+    <section id="intro">
+        <h1 id="t1">Olá, eu sou o Sérgio Guilherme!</h1>
+        <p id="t2">Estudante de Engenharia de Software.</p>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/sergioguilherme1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/sergioguilherme1" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/sergio.guip/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="row">
+            <button class="lang-button" onclick="mudarIdioma('pt')">Português</button>
+            <button class="lang-button" onclick="mudarIdioma('en')">English</button>
+        </div> 
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre">
+        <div class="conteudo-sobre" data-aos="fade-up">
+            <div class="texto-sobre">
+                <h2 id="t3">&ltSobre Mim/&gt</h2>
+                <p id="t4">Olá, me chamo Sérgio Guilherme, estou cursando Engenharia de Software e dedicando meu tempo ao aprendizado continuo e ao desenvolvimento de habilidades no mundo da programação.</p><br>
+                <p id="t5">No momento estou focado em desenvolver novos projetos afim de adquirir aprendizado para me tornar um desenvolver de software qualificado no futuro. Meu objetivo é aplicar minha paixão pela tecnologia para criar soluções inovadoras e eficazes.</p>
+            </div>
+            <div class="imagem-sobre">
+                <img src="images/imagem.jpg" alt="Minha Foto" class="foto-perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos">
+        <div data-aos="fade-up">
+            <h2 id="t6">&ltProjetos/&gt</h2>
+        </div>
+        <div data-aos="fade-up">
+            <p id="t7">Principais projetos desenvolvidos por mim</p>
+        </div>
+        <div class="conteudo-projetos" data-aos="fade-up">
+            <div class="projeto">
+                <img src="images/projeto1.png" alt="Projeto1">
+                <h3 id="t8">Calculadora</h3>
+                <span id="t9">Clique para acessar o repositório</span>
+            </div>
+            <div class="projeto">
+                <img src="images/projeto2.png" alt="Projeto2">
+                <h3 id="t10">Portifólio</h3>
+                <span id="t11">Clique para acessar o repositório</span>
+            </div>
+            <div class="projeto">
+                <img src="images/projeto3.png" alt="Projeto3">
+                <h3 id="t12">ZapZap</h3>
+                <span id="t13">Clique para acessar o repositório</span>
+            </div>
+        </div> 
+        <div class="tecnologias" data-aos="fade-up">
+            <h2 id="t14">&ltTecnologias/&gt</h2>
+            <div class="conteudo-tecnologias">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-python"></i>
+                <i class="fab fa-c"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato">
+        <h2 id="t15">&ltContato/&gt</h2>
+        <p id="t16">Você pode me encontrar em:</p>
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/sergioguilherme1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/sergioguilherme1" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/sergio.guip/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:sergiopedroso_@hotmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+        <footer>
+            <p id="t17">&copy; 2025 Sérgio Pedroso. Todos os direitos reservados.</p>
+        </footer>        
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>
